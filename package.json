@@ -1,1 +1,39 @@
-{     "devDependencies": {         "homebridge-ssh": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-homebridge-ssh",     "homepage": "https://github.com/npmdoc/node-npmdoc-homebridge-ssh",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-homebridge-ssh.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [homebridge-ssh (v0.0.6)](https://github.com/zb0th/homebridge-ssh#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-ssh.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-ssh) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-ssh.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-ssh)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "homebridge-ssh": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-homebridge-ssh",
+    "keywords": [
+        "documentation",
+        "homebridge-ssh"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_homebridge_ssh.js",
+    "name": "npmdoc-homebridge-ssh",
+    "nameAlias": "npmdoc_homebridge_ssh",
+    "nameOriginal": "npmdoc-homebridge-ssh",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-homebridge-ssh.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
