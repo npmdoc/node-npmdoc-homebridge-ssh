@@ -70,28 +70,6 @@
 
         </li>
 
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.homebridge-ssh.toString">
-            function <span class="apidocSignatureSpan">homebridge-ssh.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-ssh.toString">module homebridge-ssh.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.homebridge-ssh.toString.toString">
-            function <span class="apidocSignatureSpan">homebridge-ssh.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
     </ol></li>
 
 </ol></div>
@@ -113,71 +91,6 @@
   homebridge.registerAccessory(&#x27;homebridge-ssh&#x27;, &#x27;SSH&#x27;, SshAccessory);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.homebridge-ssh.toString" id="apidoc.element.homebridge-ssh.toString">
-        function <span class="apidocSignatureSpan">homebridge-ssh.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-stream.on(&#x27;error&#x27;, function (err) {
-  accessory.log(&#x27;Error: &#x27; + err);
-  callback(err || new Error(&#x27;Error getting state of &#x27; + accessory.name));
-});
-
-stream.on(&#x27;data&#x27;, function (data) {
-  var state = data.<span class="apidocCodeKeywordSpan">toString</span>(&#x27;utf-8&#x27;).trim().toLowerCase();
-  accessory.log(&#x27;State of &#x27; + accessory.name + &#x27; is: &#x27; + state);
-  callback(null, accessory.matchesString(state));
-});
-}
-
-SshAccessory.prototype.getServices = function() {
-var informationService = new Service.AccessoryInformation();
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.homebridge-ssh.toString" id="apidoc.module.homebridge-ssh.toString">module homebridge-ssh.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.homebridge-ssh.toString.toString" id="apidoc.element.homebridge-ssh.toString.toString">
-        function <span class="apidocSignatureSpan">homebridge-ssh.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-stream.on(&#x27;error&#x27;, function (err) {
-  accessory.log(&#x27;Error: &#x27; + err);
-  callback(err || new Error(&#x27;Error getting state of &#x27; + accessory.name));
-});
-
-stream.on(&#x27;data&#x27;, function (data) {
-  var state = data.<span class="apidocCodeKeywordSpan">toString</span>(&#x27;utf-8&#x27;).trim().toLowerCase();
-  accessory.log(&#x27;State of &#x27; + accessory.name + &#x27; is: &#x27; + state);
-  callback(null, accessory.matchesString(state));
-});
-}
-
-SshAccessory.prototype.getServices = function() {
-var informationService = new Service.AccessoryInformation();
-...</pre></li>
     </ul>
 
 
