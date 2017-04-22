@@ -1,4 +1,7 @@
-# api documentation for  [homebridge-ssh (v0.0.6)](https://github.com/zb0th/homebridge-ssh#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-ssh.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-ssh) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-ssh.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-ssh)
+# npmdoc-homebridge-ssh
+
+#### api documentation for  [homebridge-ssh (v0.0.6)](https://github.com/zb0th/homebridge-ssh#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-ssh.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-ssh) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-ssh.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-ssh)
+
 #### SSH plugin for homebridge: https://github.com/nfarina/homebridge
 
 [![NPM](https://nodei.co/npm/homebridge-ssh.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/homebridge-ssh)
@@ -57,7 +60,8 @@
         "url": "git://github.com/zb0th/homebridge-ssh.git"
     },
     "scripts": {},
-    "version": "0.0.6"
+    "version": "0.0.6",
+    "bin": {}
 }
 ```
 
